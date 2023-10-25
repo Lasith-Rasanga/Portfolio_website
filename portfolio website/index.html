@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website ~ Isaac Maverick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>L</span>asith</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home">
+        <div class="text">
+            <span>Software Engineer</span>
+            <h1>Lasith Rasanga</h1>
+            <p>I'm a content creator, graphics and web designer, an engineer and a uiux <br>designer with 2+ years of experince and am passionate about my work.</p>
+            <a href="#" class="btn">Contact <i class="fas fa-phone"></i></a>
+        </div>
+        <div class="image">
+            <img src="img/hero.png" alt="">
+        </div>
+    </section>
+
+
+    <script src="scrollreveal.js"></script>
+    <script>
+        const sr = ScrollReveal({
+            distance: '30px',
+            duration: 3500,
+            reset: true
+        });
+
+        sr.reveal('header',{delay:200, origin: 'top'});
+        sr.reveal('.home .text',{delay:400, origin: 'left'});
+        sr.reveal('.home .image',{delay:520, origin: 'right'});
+        sr.reveal('.social',{delay:520, origin: 'bottom'});
+    </script>
+
+</body>
+</html>
